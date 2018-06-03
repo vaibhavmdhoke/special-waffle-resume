@@ -1,6 +1,0 @@
-<%= form_tag("/parse", method: "post", multipart: true ) do %>
-    <%= label_tag(:file_name, "Enter File Name") %>
-    <%= text_field_tag(:file_name) %>
-    <%= file_field_tag 'file' %>
-    <%= submit_tag("Submit") %>
-  <% end %>

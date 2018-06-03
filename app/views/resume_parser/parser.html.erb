@@ -1,6 +1,28 @@
-<%=console%>
 
-<table >
+<div class="col-sm-2 sidenav">
+	<!-- TODO: Change the link to link from json Parser -->
+	<img src="https://s.gravatar.com/avatar/30ff4680517558395eb1791f33469281?s=80" class="img-circle" alt="profile-image">
+
+		</br>
+		</br>
+		</br>
+		<%=@read_file_contents['basics']['name']%>
+		</br>
+
+		<%=@read_file_contents['basics']['email']%>
+		</br>
+		
+		<%=@read_file_contents['basics']['phone']%>
+		</br>
+		<%=link_to @read_file_contents['basics']['website'], @read_file_contents['basics']['website']%>
+		</br>
+		</br>
+	<%@read_file_contents['basics']['profiles'].each do |network| %>	
+	  <p><%=network['network']%>: <%=link_to network['username'], network['url']%></p>
+	<%end%>
+</div>
+
+<!-- <table >
 	<th>
 		Basic
 	</th>
@@ -21,8 +43,14 @@
 		<td><%=link_to @read_file_contents['basics']['website'], @read_file_contents['basics']['website']%></td>
 	</tr>
 </table>
+ -->
+ <div class="col-sm-8 text-left"> 
+      <div class="jumbotron">
+        <h2>Summary</h2>
+        <p class="lead"><%= @read_file_contents['basics']['summary'].html_safe %></p>
+      </div>
 
-Summary: <%= @read_file_contents['basics']['summary'].html_safe %>
+    </div>
 </br>
 </br>
 </br>
@@ -56,7 +84,7 @@ Summary: <%= @read_file_contents['basics']['summary'].html_safe %>
 Address
 </br>
 </br>
-Profiles
+<!-- Profiles
 <table style="width:30%">
 	<tr>
 		<th>Network </th>
@@ -69,7 +97,7 @@ Profiles
 		</tr>
 	<%end%>
 </table>
-
+ -->
 </br>
 </br>
 
@@ -191,13 +219,9 @@ Profiles
 </br>
 </br>
 <table style="width:80%">
-	<%@read_file_contents['additionalPublications'].each do |publication|%>
+	<%@read_file_contents['skills'].each do |publication|%>
 		<tr>
 			<th> <%=publication['name']%> </th>
-			<th> <%=publication['publisher']%> </th>
-			<th> <%=publication['releaseDate']%> </th>
-			<th style="width:20%">  <%=link_to publication['name'], publication['website']%></th>
-			<th style="width:40%">  <%=publication['summary']%></th>
 		</tr>
 	<%end%>
 </table>
