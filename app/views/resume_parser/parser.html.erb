@@ -1,4 +1,4 @@
-<div class="col-sm-2 sidenav style">
+<div class="col-sm-2 sidenav">
 	<!-- TODO: Change the link to link from json Parser -->
 	<img src="https://s.gravatar.com/avatar/30ff4680517558395eb1791f33469281?s=80" class="img-circle" alt="profile-image">
 
@@ -151,20 +151,16 @@
 	<table style="width:80%">
 		<%@read_file_contents['skills'].each do |publication|%>
 			<tr>
-				<th> <%=publication['name']%> </th>
+				<th><kbd> <%=publication['name']%></kbd> </th>
+				<th> <%=publication['level']%> </th>
+				<%publication['keywords'].each do |keyword|%>
+					<th> <%=keyword%> </th>
+				<%end%>
 			</tr>
 		<%end%>
 	</table>
 </div>
 
 
-<div class="col-sm-2 sidenav">
-	<div class="well">
-	  <p>Test</p>
-	</div>
-	<div class="well">
-	  <p>Tesr</p>
-	</div>
-</div>
 
 
