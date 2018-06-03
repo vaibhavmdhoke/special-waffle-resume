@@ -1,0 +1,205 @@
+<%=console%>
+
+<table >
+	<th>
+		Basic
+	</th>
+	<tr>
+		<td>Name</td>
+		<td> <%=@read_file_contents['basics']['name']%> </td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><%=@read_file_contents['basics']['email']%></td>
+	</tr>
+	<tr>
+		<td>Phone</td>
+		<td><%=@read_file_contents['basics']['phone']%></td>
+	</tr>
+	<tr>
+		<td>WebSite</td>
+		<td><%=link_to @read_file_contents['basics']['website'], @read_file_contents['basics']['website']%></td>
+	</tr>
+</table>
+
+Summary: <%= @read_file_contents['basics']['summary'].html_safe %>
+</br>
+</br>
+</br>
+
+<table >
+	<th>
+		Address
+	</th>
+	<tr>
+		<td>Address</td>
+		<td> <%=@read_file_contents['basics']['location']['address']%> </td>
+	</tr>
+	<tr>
+		<td>City</td>
+		<td><%=@read_file_contents['basics']['location']['city']%></td>
+	</tr>
+	<tr>
+		<td>Postal Code</td>
+		<td><%=@read_file_contents['basics']['location']['postalCode']%></td>
+	</tr>
+	<tr>
+		<td>Region</td>
+		<td><%=@read_file_contents['basics']['location']['region']%></td>
+	</tr>
+	<tr>
+		<td>Country</td>
+		<td><%=@read_file_contents['basics']['location']['countryCode']%></td>
+	</tr>
+</table>
+
+Address
+</br>
+</br>
+Profiles
+<table style="width:30%">
+	<tr>
+		<th>Network </th>
+		<th>Link </th>
+	</tr>
+	<%@read_file_contents['basics']['profiles'].each do |network| %>
+		<tr>
+			<td> <%=network['network']%> </td>
+			<td> <%=link_to network['username'], network['url']%>  </td>
+		</tr>
+	<%end%>
+</table>
+
+</br>
+</br>
+
+<h2>Work</h2>
+</br>
+</br>
+<table style="width:70%">
+	<%@read_file_contents['work'].each do |company|%>
+		<tr>
+			<th>  <%=link_to company['company'], company['website']%> </th>
+			<th> <%=company['position']%> </th>
+			<th style="width:20%"> <%=company['startDate']%> to <%=company['endDate']%></th>
+		</tr>
+		<tr>
+			 <td colspan="2"><%=company['summary']%></td> 
+		</tr>
+		<tr>
+			<td colspan="2">
+				<%company['highlights'].each do |highlight| %>
+					<ul>
+				  	<li><%= highlight%></li>
+					</ul>
+			<% end %> 
+		</tr>
+	
+	<%end%>
+</table>
+
+
+
+<h2>Previous Works</h2>
+</br>
+</br>
+<table style="width:70%">
+	<%@read_file_contents['additionalWork'].each do |company|%>
+		<tr>
+			<th>  <%=link_to company['company'], company['website']%> </th>
+			<th> <%=company['position']%> </th>
+			<th style="width:20%"> <%=company['startDate']%> to <%=company['endDate']%></th>
+		</tr>
+		<tr>
+			 <td colspan="2"><%=company['summary']%></td> 
+		</tr>
+		<tr>
+			<td colspan="2">
+				<%company['highlights'].each do |highlight| %>
+					<ul>
+				  	<li><%= highlight%></li>
+					</ul>
+			<% end %> 
+		</tr>
+	
+	<%end%>
+</table>
+
+</br>
+</br>
+
+<h2>Education</h2>
+</br>
+</br>
+<table style="width:70%">
+	<%@read_file_contents['education'].each do |education|%>
+		<tr>
+
+			<th> <%=education['institution']%> </th>
+			<th> <%=education['studyType']%> </th>
+			<th> <%=education['area']%> </th>
+			<th style="width:20%"> <%=education['startDate']%> to <%=education['endDate']%></th>
+			<th style="width:20%"> GPA: <%=education['gpa']%></th>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<%education['courses'].each do |cource| %>
+					<ul>
+				  	<li><%= cource%></li>
+					</ul>
+			<% end %> 
+		</tr>
+	<%end%>
+</table>
+
+
+
+<h2>Publications</h2>
+</br>
+</br>
+<table style="width:80%">
+	<%@read_file_contents['publications'].each do |publication|%>
+		<tr>
+			<th> <%=publication['name']%> </th>
+			<th> <%=publication['publisher']%> </th>
+			<th> <%=publication['releaseDate']%> </th>
+			<th style="width:20%">  <%=link_to publication['name'], publication['website']%></th>
+			<th style="width:40%">  <%=publication['summary']%></th>
+		</tr>
+	<%end%>
+</table>
+
+
+<h2>Publications</h2>
+</br>
+</br>
+<table style="width:80%">
+	<%@read_file_contents['additionalPublications'].each do |publication|%>
+		<tr>
+			<th> <%=publication['name']%> </th>
+			<th> <%=publication['publisher']%> </th>
+			<th> <%=publication['releaseDate']%> </th>
+			<th style="width:20%">  <%=link_to publication['name'], publication['website']%></th>
+			<th style="width:40%">  <%=publication['summary']%></th>
+		</tr>
+	<%end%>
+</table>
+
+
+
+<h2>Skills</h2>
+</br>
+</br>
+<table style="width:80%">
+	<%@read_file_contents['additionalPublications'].each do |publication|%>
+		<tr>
+			<th> <%=publication['name']%> </th>
+			<th> <%=publication['publisher']%> </th>
+			<th> <%=publication['releaseDate']%> </th>
+			<th style="width:20%">  <%=link_to publication['name'], publication['website']%></th>
+			<th style="width:40%">  <%=publication['summary']%></th>
+		</tr>
+	<%end%>
+</table>
+
+<%= @read_file_contents.inspect%>
