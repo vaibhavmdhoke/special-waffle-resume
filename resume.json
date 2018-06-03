@@ -1,0 +1,173 @@
+{
+  "basics": {
+    "name": "Vaibhav Dhoke",
+    "label": "",
+    "picture": "",
+    "email": "vmdhoke@gmail.com",
+    "phone": "00919665392083",
+    "degree": "",
+    "website": "https://github.com/vaibhavmdhoke",
+    "summary": "Considering success as a path not as a destination, I continuously pursue to excel in the field of \ntechnology, nurture my talents to expose the best of me and to secure the platform where I can utilise my knowledge, exhibit my skills for the organisation’s growth and constantly be in the \n process of learning.",
+    "highlights": "",
+    "location": {
+      "address": "Flat No. 4 Sai Angan B \n Devkar Park, ",
+      "postalCode": "411061",
+      "city": "Pune",
+      "countryCode": "India",
+      "region": "Maharashtra"
+    },
+    "profiles": [
+      {
+        "network": "StackOverFlow",
+        "username": "vaibhav-dhoke",
+        "url": "https://stackoverflow.com/users/5810899/vaibhav-dhoke"
+      },
+      {
+        "network": "GitHub",
+        "username": "vaibhavmdhoke",
+        "url": "https://github.com/vaibhavmdhoke"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "vmdhoke",
+        "url": "https://www.linkedin.com/in/vaibhav-dhoke-90562514/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Forgeahead",
+      "position": "Software Engineer",
+      "website": "https://www.forgeahead.io",
+      "startDate": "3/August/2017",
+      "endDate": "Present",
+      "summary": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
+      "highlights": [
+        "Reporting of Trip:",
+        "Optimizing Of Queries:",
+        "Maintenance & Upgradation:",
+        "Removing Tight Coupling of Ruby Services:"
+      ]
+    }
+  ],
+  "additionalWork": [
+    {
+      "company": "Hartley Lab",
+      "position": "Software Engineer",
+      "website": "https://www.hartleylab.com/",
+      "startDate": "1/June/2016",
+      "endDate": "31/July/2017",
+      "summary": "Its an transparent Employee Appraisal platform & Employee Management Portal which caters all the needs of appraisal.",
+      "highlights": [
+        "Designing Of Database Schema",
+        "Implementation Of Authentication System:", 
+        "Migration Of Employees ",
+        "Maintenance & Upgradation"
+      ]
+    },
+     {
+      "company": "Mirraw",
+      "position": "Software Trainee",
+      "website": "https://www.mirraw.com/",
+      "startDate": "25/Oct/2015",
+      "endDate": "17/March/2016",
+      "summary": "Its an transparent Employee Appraisal platform & Employee Management Portal which caters all the needs of appraisal.",
+      "highlights": [
+        "Designing Of Database Schema",
+        "Implementation Of Authentication System:", 
+        "Migration Of Employees ",
+        "Maintenance & Upgradation"
+      ]
+    },
+    {
+      "company": "Webonise Lab",
+      "position": "Trainee",
+      "website": "https://www.webonise.com/",
+      "startDate": "18/Feb/2015",
+      "endDate": "23/Oct/2015",
+      "summary": "Its an transparent Employee Appraisal platform & Employee Management Portal which caters all the needs of appraisal.",
+      "highlights": [
+        "Designing Of Database Schema",
+        "Implementation Of Authentication System:", 
+        "Migration Of Employees ",
+        "Maintenance & Upgradation"
+      ]
+    }
+  ],
+  "workLabel": "",
+  "additionalWorkLabel": "",
+  "education": [
+    {
+      "institution": "BIT Mesra",
+      "area": "Computer Science",
+      "studyType": "Masters",
+      "startDate": "26/August/2012",
+      "endDate": "16/July/2014",
+      "gpa": "8.9",
+      "courses": [
+        "Master Of Technology"
+      ]
+    },
+    {
+      "institution": "Pune University",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "26/August/2008",
+      "endDate": "16/July/2012",
+      "gpa": "7.0",
+      "courses": [
+        "Bachelor Of Engineering"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "International Journal of engineering development and research",
+      "publisher": "IJEDR",
+      "releaseDate": "IJEDR 2014",
+      "website": "https://www.ijedr.org/",
+      "summary": "By using Hexagonal Grouping existing protocol GAF (Geographic Adaptive Fidelity) is outperformed by 180%. In group rotation scheme 51.96% sensors are put to active state as compared to GAF. This thesis was being accepted in with Registration ID: IJEDR_140682 in IJEDER(International Journal of engineering development and research) Journal in 2014.",
+      "isbn": "2321-9939"
+    }
+  ],
+  "additionalPublications": [
+    {
+      "name": "International Journal of engineering development and research",
+      "publisher": "IJEDR",
+      "releaseDate": "IJEDR 2014",
+      "website": "https://www.ijedr.org/",
+      "summary": "By using Hexagonal Grouping existing protocol GAF (Geographic Adaptive Fidelity) is outperformed by 180%. In group rotation scheme 51.96% sensors are put to active state as compared to GAF. This thesis was being accepted in with Registration ID: IJEDR_140682 in IJEDER(International Journal of engineering development and research) Journal in 2014.",
+      "isbn": "2321-9939"
+    }
+  ],
+  "publicationsLabel": "",
+  "additionalPublicationsLabel": "",
+  "skills": [
+    {
+      "name": "Ruby On Rails",
+      "level": "Advance",
+      "keywords": [
+        "Web development",
+        "Full Stack"
+      ]
+    },
+    {
+      "name": "Phoenix",
+      "level": "Hands On",
+      "keywords": [
+        "Web development",
+        "Full Stack",
+        "CSS",
+        "SASS"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "level": "Advance",
+      "keywords": [
+        "RDBMS",
+        "Full Stack"
+      ]
+    }
+  ]
+}

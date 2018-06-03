@@ -1,26 +1,20 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
+    		<h1>Resume Parser</h1>
 
-      	<%= form_tag("/parse", method: "post", multipart: true ) do %>
-					<%= label_tag(:file_name, "Enter File Name") %>
-					<%= text_field_tag(:file_name) %>
-					<%= file_field_tag 'file' %>
+    		<h2>Submit resume in JSON format, The Format which the application understands is here <%=link_to 'Resume', '/resume_empty.json'%>
+      </h2>
+    			<%= form_tag("/parse", method: "post", multipart: true ) do %>
+					<%= file_field_tag 'file', required: true %>
+					</br>
 					<%= submit_tag("Submit") %>
 				<% end %>
 
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
     </div>
     <div class="col-sm-2 sidenav">
-      
     </div>
   </div>
 </div>
